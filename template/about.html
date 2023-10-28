@@ -1,0 +1,50 @@
+<style>
+
+.about-section {
+    background-color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+</style>
+
+   
+{%extends 'base.html' %}
+
+{%block title%} About Creative Atul {%endblock%}
+
+
+{%block content%}
+
+    <section class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Welcome to Creative Atul, your digital hub for the most in-depth and up-to-date programming resources, tech news, and thought-provoking blogs. Whether you're a budding programmer looking to sharpen your skills or a seasoned developer searching for the latest insights, our blog has you covered.</p>
+
+                <p>Programming Expertise: Our comprehensive programming section delves deep into various languages, frameworks, and coding practices. From beginner-friendly tutorials to advanced techniques, we provide valuable resources to help you master the art of coding.</p>
+                   
+                <p> Tech News: Stay ahead of the curve with our timely and informative tech news coverage. We bring you breaking news, industry trends, and in-depth analysis of the latest developments in the tech world, ensuring you're always in the know.</p>
+                    
+                <p> Blogs: Explore our engaging and thought-provoking blogs that tackle technology's broader implications. We discuss topics ranging from the impact of AI and cybersecurity to the intersection of tech and society. Our goal is to provide you with a well-rounded understanding of the digital landscape.</p>
+                        
+                <p>Join us on a journey through the ever-evolving world of technology, where our in-depth content helps you navigate the complexities of programming and stay informed about the latest advancements. Whether you're here to learn, stay inst.</p>
+        </div>
+    </section>
+    {%endblock%}
+    
+<script>
+    function toggleAdditionalContent() {
+        var additionalContent = document.getElementById('additional-content');
+        if (additionalContent.style.display === 'none' || !additionalContent.style.display) {
+            additionalContent.style.display = 'block';
+        } else {
+            additionalContent.style.display = 'none';
+        }
+    }
+</script>
+

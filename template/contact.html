@@ -1,0 +1,38 @@
+
+    {%extends 'base.html' %}
+    
+    {%block title%} Contact Creative Atul {%endblock%}
+    
+    {%block content%}
+
+   
+
+
+    <h1 class="text-center mt-3">Contact</h1>
+    <form class="mx-3 my-2 border rounded-3 w-50 p-5 align-middle mx-auto" method="post" action="/contact/">
+      {% csrf_token %}
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Full Name</label>
+          <input type="text" class="form-control" name="name" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Mobile No.</label>
+            <input type="text" class="form-control" name="mobile" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Comment</label>
+            <textarea class="form-control" placeholder="Leave a comment here" name="feedback" id="floatingTextarea2" style="height: 100px"></textarea>
+            
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+        
+        {%endblock%}
+        
+    
+    
+    

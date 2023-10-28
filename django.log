@@ -1,0 +1,147 @@
+Watching for file changes with StatReloader
+C:\Users\sarvadnya\Desktop\iblogs-main\blog\views.py changed, reloading.
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+Forbidden (CSRF token missing or incorrect.): /admin/auth/user/
+Forbidden (CSRF token missing or incorrect.): /admin/auth/user/
+C:\Users\sarvadnya\Desktop\iblogs-main\blog\views.py changed, reloading.
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\sarvadnya\Desktop\iblogs-main\blog\views.py changed, reloading.
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+STREAM b'IHDR' 16 13
+STREAM b'PLTE' 41 144
+STREAM b'IDAT' 197 2867
+Importing BlpImagePlugin
+Importing BmpImagePlugin
+Importing BufrStubImagePlugin
+Importing CurImagePlugin
+Importing DcxImagePlugin
+Importing DdsImagePlugin
+Importing EpsImagePlugin
+Importing FitsImagePlugin
+Importing FitsStubImagePlugin
+Importing FliImagePlugin
+Importing FpxImagePlugin
+Image: failed to import FpxImagePlugin: No module named 'olefile'
+Importing FtexImagePlugin
+Importing GbrImagePlugin
+Importing GifImagePlugin
+Importing GribStubImagePlugin
+Importing Hdf5StubImagePlugin
+Importing IcnsImagePlugin
+Importing IcoImagePlugin
+Importing ImImagePlugin
+Importing ImtImagePlugin
+Importing IptcImagePlugin
+Importing JpegImagePlugin
+Importing Jpeg2KImagePlugin
+Importing McIdasImagePlugin
+Importing MicImagePlugin
+Image: failed to import MicImagePlugin: No module named 'olefile'
+Importing MpegImagePlugin
+Importing MpoImagePlugin
+Importing MspImagePlugin
+Importing PalmImagePlugin
+Importing PcdImagePlugin
+Importing PcxImagePlugin
+Importing PdfImagePlugin
+Importing PixarImagePlugin
+Importing PngImagePlugin
+Importing PpmImagePlugin
+Importing PsdImagePlugin
+Importing SgiImagePlugin
+Importing SpiderImagePlugin
+Importing SunImagePlugin
+Importing TgaImagePlugin
+Importing TiffImagePlugin
+Importing WebPImagePlugin
+Importing WmfImagePlugin
+Importing XbmImagePlugin
+Importing XpmImagePlugin
+Importing XVThumbImagePlugin
+STREAM b'IHDR' 16 13
+STREAM b'IDAT' 41 19506
+STREAM b'IHDR' 16 13
+STREAM b'IDAT' 41 32768
+STREAM b'IHDR' 16 13
+STREAM b'tEXt' 41 25
+STREAM b'iTXt' 78 802
+STREAM b'IDAT' 892 38173
+tag: ImageWidth (256) - type: short (3) - value: b"'\x10"
+tag: ImageLength (257) - type: short (3) - value: b'\x13\x88'
+tag: BitsPerSample (258) - type: short (3) Tag Location: 46 - Data Location: 170 - value: b'\x00\x08\x00\x08\x00\x08'
+tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x00\x02'
+tag: ImageDescription (270) - type: string (2) Tag Location: 70 - Data Location: 176 - value: <table: 197 bytes>
+tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+tag: SamplesPerPixel (277) - type: short (3) - value: b'\x00\x03'
+tag: XResolution (282) - type: rational (5) Tag Location: 106 - Data Location: 373 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+tag: YResolution (283) - type: rational (5) Tag Location: 118 - Data Location: 381 - value: b"\x00\n\xfc\x80\x00\x00'\x10"
+tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+tag: Software (305) - type: string (2) Tag Location: 142 - Data Location: 389 - value: b'Adobe Photoshop 22.5 (Windows)\x00'
+tag: DateTime (306) - type: string (2) Tag Location: 154 - Data Location: 420 - value: b'2021:11:04 12:00:27\x00'
+tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x01\xb8'
+Watching for file changes with StatReloader
+C:\Users\sarvadnya\Desktop\iblogs-main\blog\views.py changed, reloading.
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\sarvadnya\AppData\Local\Programs\Python\Python38-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\sarvadnya\AppData\Local\Programs\Python\Python38-32\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\sarvadnya\AppData\Local\Programs\Python\Python38-32\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sarvadnya\Desktop\iblogs-main\blog\views.py", line 31, in home
+    return render(request, 'home.html', data)
+  File "C:\Users\sarvadnya\AppData\Local\Programs\Python\Python38-32\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\sarvadnya\AppData\Local\Programs\Python\Python38-32\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\sarvadnya\AppData\Local\Programs\Python\Python38-32\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\sarvadnya\AppData\Local\Programs\Python\Python38-32\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\sarvadnya\AppData\Local\Programs\Python\Python38-32\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\sarvadnya\AppData\Local\Programs\Python\Python38-32\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\sarvadnya\AppData\Local\Programs\Python\Python38-32\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\sarvadnya\AppData\Local\Programs\Python\Python38-32\lib\site-packages\django\template\loader_tags.py", line 176, in render
+    template = context.template.engine.get_template(template_name)
+  File "C:\Users\sarvadnya\AppData\Local\Programs\Python\Python38-32\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\sarvadnya\AppData\Local\Programs\Python\Python38-32\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\sarvadnya\AppData\Local\Programs\Python\Python38-32\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\sarvadnya\AppData\Local\Programs\Python\Python38-32\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\sarvadnya\AppData\Local\Programs\Python\Python38-32\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\sarvadnya\AppData\Local\Programs\Python\Python38-32\lib\site-packages\django\template\base.py", line 477, in parse
+    raise self.error(token, e)
+  File "C:\Users\sarvadnya\AppData\Local\Programs\Python\Python38-32\lib\site-packages\django\template\base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\sarvadnya\AppData\Local\Programs\Python\Python38-32\lib\site-packages\django\template\defaulttags.py", line 966, in do_if
+    nodelist = parser.parse(('endif',))
+  File "C:\Users\sarvadnya\AppData\Local\Programs\Python\Python38-32\lib\site-packages\django\template\base.py", line 482, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\sarvadnya\AppData\Local\Programs\Python\Python38-32\lib\site-packages\django\template\base.py", line 543, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 63: 'if'. Looking for one of: endif.
+C:\Users\sarvadnya\Desktop\iblogs-main\blog\views.py changed, reloading.
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+Watching for file changes with StatReloader
+C:\Users\sarvadnya\Desktop\iblogs-main\blog\views.py changed, reloading.
+Using proactor: IocpProactor
+Using proactor: IocpProactor
+Watching for file changes with StatReloader

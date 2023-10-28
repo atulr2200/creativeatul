@@ -1,0 +1,74 @@
+<!-- Dropdown Structure -->
+<!--<ul id="dropdown1" class="dropdown-content" >
+    
+
+    {% for language in languages %}
+
+    <li><a href="/language/{{language.pk}}" style=" color: black;" class="link-offset-2 link-underline link-underline-opacity-0">{{language.title}}</a></li>
+
+    {% endfor %}
+
+</ul>
+
+<nav class="bg-primary" style="background-color:#477091!important;">
+    <div class="container" >
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo link-offset-2 link-underline link-underline-opacity-0"> Tech BLOGS</a>
+            <ul class="right hide-on-med-and-down">
+                <li style="width: 200px;"><a class="dropdown-trigger link-offset-2 link-underline link-underline-opacity-0" href="#!"  data-target="dropdown1">LANGUAGES<i
+                    class="material-icons right"></i></a>
+                </li>
+
+                <li><a href="/about" class="link-offset-2 link-underline link-underline-opacity-0">ABOUT</a></li>
+                <li><a href="/admin" class="link-offset-2 link-underline link-underline-opacity-0">ADMIN</a></li>
+                <li><a href="/logout " class="link-offset-2 link-underline link-underline-opacity-0">LOGOUT</a></li>
+               
+                
+            </ul>
+        </div>
+    </div>
+</nav>-->
+<!-- Dropdown Structure -->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand me-6 ms-5" href="#">
+            <img src="../static/img/a.png" alt="Logo" width="35" height="29" class="d-inline-block align-text-center mb-1 ms-5  ">
+            -Tech
+          </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active ms-3" aria-current="page" href="/projects">Home</a>
+          </li>
+          <li class="nav-item"><a class="nav-link " href="/">Blogs</a></li>
+          <li class="nav-item"><a href="#project" class="nav-link">Projects</a></li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Languages
+            </a>
+            <ul class="dropdown-menu">
+                {% for language in languages %}
+              <li class="" > 
+                <a class="dropdown-item " href="/language/{{language.pk}}">{{language.title}}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+          <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+        </ul>
+        <form class="d-flex me-6 mx-5" role="search" method="get" action="/projectSearch">
+          <input class="form-control me-2 px-3 p-1" type="search" name="query" id="query" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success p-1" type="submit">Search</button>
+        </form>
+        
+        <a href="/logout " class="btn btn-outline-success ms-5 p-1">Logout</a></li>
+        
+      </div>
+    </div>
+  </nav>
+

@@ -1,0 +1,102 @@
+{%extends 'projectBase.html' %}
+
+{%block title%} Welcome to A-Tech {%endblock%}
+
+{%block content%}
+
+
+<!--<div class="container-custom">
+
+
+
+    
+    <div class="owl-carousel" >
+
+
+        {% for cat in cats %}
+
+        <div class="card item" style=" height: 310px; width: 70%; ">
+            <a href="/category/{{cat.url}}" class="link-offset-2 link-underline link-underline-opacity-0" >
+            <div class="img-container">
+
+                <img src="/media/{{cat.image}}" class="responsive-img" alt="">
+
+            </div>
+            <div class="" style=" color: #000;">
+
+                <div class="" style="font-size: 20px; padding-top:5px; padding-left: 20px; padding-bottom: 0%;" >
+                    {{cat.title}}
+                </div>
+
+                <p class="truncate" style="padding-left: 20px; padding-right: 20px; margin-bottom: 10px;">{{cat.description}}</p>
+                
+
+            </div>
+
+        </a>
+        </div>
+
+        {%endfor%}
+
+    </div>
+
+
+</div>
+
+
+<div class="container"  style="display: flex;">
+
+    <div class="row"  >
+
+        <div class="col s12 bord " >
+
+
+            {%for p in posts %}
+
+            <div class="row" style=" padding: 20px; background-color: rgb(227, 235, 235); border-radius: 10px; height: auto; width: auto;">
+
+                <div class="col s12 m8" >
+
+
+                    {{p.content |truncatewords:60 | safe}}
+                    <div class="mt20">
+                        <a href="/blog/{{p.url}}" class="btn  bg-primary link-offset-2 link-underline link-underline-opacity-0" style="background-color:#477091!important;color: aliceblue;">Read More ..</a>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <img src="/media/{{p.image}}" class="responsive-img" style="margin-top:50px;">
+
+                </div>
+
+            </div>
+
+
+            {%endfor %}
+
+
+        </div>
+
+
+    </div>
+
+</div>-->
+
+
+
+<h1 class="text-center mt-5" id="blogs">Search Result</h1>
+<div class="container " style="display: flex;">
+    {%for p in allpost %}
+    <div class="card mx-2 my-2" style="width: 20rem; ">
+        
+        <img src="/media/{{p.image}}" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title fs-5">{{p.title}}</h5>
+        <!--<p class="card-text truncate">{{p.content |truncatewords:5 | safe}}</p>-->
+        <a href="/blog/{{p.url}}" class="btn btn-primary">Read More ..</a>
+        </div>
+        
+    </div>
+    {%endfor %}
+</div>
+{%endblock%}

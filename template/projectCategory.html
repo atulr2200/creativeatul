@@ -1,0 +1,30 @@
+{%extends 'projectBase.html' %}
+
+{%block title%} Welcome to A-Tech {%endblock%}
+
+{%block content%}
+
+<div class="container">
+    <h3 class="text-center mt-5">{{language.title}}</h3>
+    <!--<div class="img-container">
+        <img src="/media/{{cat.image}}" class="responsive-img w-100" style="max-height:450px;width:100%;object-fit:cover;"
+             alt="">
+    </div>-->
+
+    <div class="collection">
+        <div class="container my-2 mb-5 h-100 d-flex" >
+            {%for p in projects %}
+              <div class="card my-2" style="width: 20rem;">
+                  <img src="/media/{{p.image}}" class="card-img-top" style="height: 200px;">
+                  <div class="card-body">
+                  <h5 class="card-title fs-6 truncate">{{p.title |truncatewords:5}}</h5>
+                  <!--<p class="card-text truncate">{{p.content |truncatewords:5 | safe}}</p>-->
+                  <a href="/blog/{{p.url}}" class="btn btn-primary">Read More ..</a>
+                  </div>
+              </div>
+           {%endfor %}
+           </div>
+    </div>
+</div>
+
+{%endblock%}

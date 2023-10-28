@@ -1,0 +1,59 @@
+{%extends 'projectBase.html' %}
+
+{%block title%} Welcome to A-Tech {%endblock%}
+
+{%block content%}
+
+
+<div class="container w-75" >
+    <div class="row border rounded my-3 p-3 ">
+        <div class="col">
+            <!--<h3>{{post.title}}</h3>
+            <p class="hidden">( {{post.cat.title}} )</p>-->
+            <img src="/media/{{projects.image}}" class="responsive-img w-100 h-50" alt="">
+            <br>
+            <h3 class="my-3">{{projects.title}}</h3>
+            <p>
+                {{projects.content|safe}}
+            </p>
+            <a href="" class="btn btn-primary">Download</a>
+        </div>
+
+       <!-- <div class="col s12 m2">
+
+
+            {% for cat in cats %}
+
+            <div class="card item" style="margin-left:10px;">
+
+                <div class="img-container">
+
+                    <img src="/media/{{cat.image}}" class="responsive-img" alt="">
+
+                </div>
+                <div class="card-content">
+
+                    <b>
+                        {{cat.title}}
+                    </b>
+
+                    <p class="truncate">{{cat.description}}</p>
+                    <div class="container center-align mt20">
+                        <a href="/category/{{cat.url}}" class="btn bg-primary">VIEW</a>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            {%endfor%}
+
+
+        </div>-->
+    </div>
+
+</div>
+
+
+{%endblock%}
