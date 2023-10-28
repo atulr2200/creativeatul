@@ -1,0 +1,6 @@
+python 3.7
+django 4.0.0
+gunicorn 
+logging
+django-material
+material.admin
